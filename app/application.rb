@@ -6,7 +6,7 @@ class Application
 
     if req.path==/items
         item_name = req.path.split(/items/).last
-        item = @@items.find{|i| i.name == item_name}.price
+        @@items.includes?(item_name) ? item = @@items.find{|i| i.name == item_name}.price : resp.status = 404
     else
       resp.status = 404
     end
