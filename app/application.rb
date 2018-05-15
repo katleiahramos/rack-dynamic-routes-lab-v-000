@@ -6,7 +6,7 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
     binding.pry
-    # 
+    #
     # if req.path=="/items/"
     #     item_name = req.path.split(/items/).last
     #     @@items.includes?(item_name) ? item = @@items.find{|i| i.name == item_name}.price : resp.status = 404
