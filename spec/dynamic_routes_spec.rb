@@ -1,9 +1,9 @@
 require_relative './spec_helper'
 
-# describe "Shopping Cart Rack App" do
-#   def app()
-#     Application.new
-#   end
+describe "Shopping Cart Rack App" do
+  def app()
+    Application.new
+  end
 #
 #   it 'Returns 404 for a bad route' do
 #     get '/testing'
